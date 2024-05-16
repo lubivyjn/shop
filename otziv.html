@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" contest="text/html"; charset=utf-8"/>
+<link rel="stylesheet" href="style3.css">
+<FORM>
+<script type="text/javascript">
+function ValidMail() {
+let re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
+let re1 = /^[\w-]+$/i;
+let myMail = document.getElementById('email').value;
+let myName = document.getElementById('name').value;
+let myTheme = document.getElementById('theme').value;
+let myText = document.getElementById('text').value;
+let valid = re.test(myMail);
+let valid1 = re1.test(myName);
+let valid2 = re1.test(myTheme);
+let valid3 = re1.test(myText);
+if (valid && valid1 && valid2 && valid3) output = 'Все данные заполнены правильно';
+else output = 'Адрес электронной почты введен неверно';
+document.getElementById('message').innerHTML = output;
+return valid;
+}
+</script>
+<p id="message">Заполните всё</p>
+<p><h2>Оставьте свой отзыв</h2></p>
+
+<id>Имя:<br /> <input id="name" name="name" type="text" size="20" /><br /></id>
+<NAME>E-mail:<br /> <input id="email" name="email" type="text" size="20" /><br /></NAME>
+<book>Заголовок:<br /> <input id="theme" type="text" name="mainN" size="20" /><br /></book>
+<izdat>Текст отзыва:<br /> <input id="text" type="text" name="smth" size="50" /></izdat>
+<input name="button" type="submit" value="Отправить" onClick="ValidMail();" />
+</FORM>
+</html>

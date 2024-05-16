@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Анкета</title>
+<script language="JavaScript">
+function Upper() {
+var st = document.getElementById('Name').value;
+document.getElementById('Name').value = st.toUpperCase();
+var st = document.getElementById('SecName').value;
+document.getElementById('SecName').value = st.toUpperCase();
+//alert(document.getElementById("Age").value);
+}
+function Vivod() {
+if (document.getElementById('Age').value < 18) {
+alert("Error")
+}
+else {
+alert("Фамилия: " + document.getElementById("SecName").value + "\n" +
+"Имя: " + document.getElementById("Name").value + "\n" +
+"Номер карты: " + Math.ceil(Math.random() * 99999999));
+}
+}
+</script>
+</head>
+<body>
+<p id="hui"><h1>Заполните анкету</h1></p>
+<form name="anketa">
+Фамилия: <input id="SecName" type="text" onChange="Upper()" /><hr />
+Имя: <input id="Name" type="text" onChange="Upper()" /><hr />
+Телефон: <input id="Tele" type="text" /><hr />
+Возраст: <input id="Age" name="age" type="text" /><br />
+<input id="Subm" type="submit" value="Зарегестрировать карту" style="background: purple; color: yellow" onclick="Vivod()" /> <input id="Reset" type="reset" value="Очистить данные" />
+</form>
+</body>
+</html>

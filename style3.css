@@ -1,0 +1,47 @@
+OTZ
+{
+	display: block;
+	margin: 10px 20px 10px 20px;
+	margin-top: 12pt;
+	border-style: double;
+	border-color: #8C0088;
+	font-size: 15pt;
+	text-align:center;
+}
+
+id {
+	display: block;
+	text-align: center;
+	border-top: double;
+	border-color: #8C0088;
+	font-weight: bold;
+}
+
+NAME {
+	display: block;
+	text-align: center;
+	border-top: double;
+	border-color: #8C0088;
+	font-weight: bold;
+}
+
+book {
+	display: block;
+	text-align: center;
+	border-top: double;
+	border-color: #8C0088;
+}
+
+autor {
+	display: block;
+	text-align: center;
+	border-top: double;
+	border-color: #8C0088;
+}
+
+izdat {
+	display: block;
+	text-align: center;
+	border-top: double;
+	border-color: #8C0088;
+}
